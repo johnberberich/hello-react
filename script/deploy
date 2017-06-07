@@ -4,6 +4,4 @@
 
 cd "$(dirname "$0")/.."
 
-echo "$(whoami)"
-echo "$(pwd)"
-rsync -avz . deployer@webt01:/srv/hello-react
+rsync -rvz --exclude=.git . deployer@webt01:/srv/hello-react/
