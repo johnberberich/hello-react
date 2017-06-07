@@ -1,0 +1,14 @@
+{
+  "name": "hello-react",
+  "version": "0.1.0",
+  "author": "John Berberich <jberberich@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "cucumber": "^2.3.0",
+    "phantom": "^4.0.4",
+    "selenium-webdriver": "^3.4.0"
+  },
+  "scripts": {
+    "test": "cucumberjs"
+  }
+}
