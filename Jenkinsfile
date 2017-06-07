@@ -7,9 +7,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo '$(whoami)'
-                echo '$(pwd)'
-                echo '$(ls -al)'
+                sh 'whoami'
+                sh 'pwd'
+                sh 'ls -al'
                 sh 'npm install'
             }
         }
