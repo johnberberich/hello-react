@@ -4,4 +4,4 @@
 
 cd "$(dirname "$0")/.."
 
-rsync -rvz --exclude=.git . deployer@webt01:/srv/hello-react/
+scp -Crv . deployer@webt01:/srv/hello-react/
