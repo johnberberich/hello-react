@@ -8,13 +8,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'echo $HOME; pwd; ls -al'
                 sh 'npm install'
             }
         }
-        stage('Test') {
+        stage('Deploy') {
             steps {
-                sh 'npm test'
+                sh 'script/deploy'
+            }
+        }
+        stage('Integration') {
+            steps {
+                sh 'npm run-script integration-test'
             }
         }
     }
