@@ -5,10 +5,12 @@
   "license": "MIT",
   "devDependencies": {
     "cucumber": "^2.3.0",
-    "phantom": "^4.0.4",
-    "selenium-webdriver": "^3.4.0"
+    "nightwatch": "^0.9.15",
+    "nightwatch-cucumber": "^7.1.8",
+    "phantomjs-prebuilt": "^2.1.14",
+    "selenium-server": "^3.4.0"
   },
   "scripts": {
-    "test": "cucumberjs"
+    "integration-test": "nightwatch --env integration"
   }
 }
