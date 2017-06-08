@@ -13,6 +13,8 @@ pipeline {
         }
         stage('Deploy') {
             steps {
+                sh 'printenv'
+                sh 'which rsync'
                 sh 'script/deploy'
             }
         }
